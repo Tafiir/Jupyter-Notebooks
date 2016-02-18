@@ -3,7 +3,7 @@ from matplotlib.pyplot import *
 import pandas as pd
 import scipy as sp
 import sympy as sm
-from IPython.display import Latex
+from IPython.display import display, Latex, Math
 import warnings
 %matplotlib inline
 
