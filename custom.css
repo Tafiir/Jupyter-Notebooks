@@ -1,0 +1,27 @@
+table {
+    border-collapse: collapse;
+    page-break-inside: avoid;
+    /*width: 100%;*/
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+  text-align: left;
+  height: 1.2cm;
+  width: 2.5cm;
+}
+
+div {
+    padding: 0.5cm
+}
+
+body {
+    font-family: 'Roboto',sans-serif;
+}
+
+.MathJax {
+    font-size: 2em !important;
+}
