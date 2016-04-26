@@ -18,3 +18,6 @@ def valerr(id, val, err, r=-1, unit=""):
         display(Latex(r"${0} = {1} \pm {2}$".format(id, val, err)))
     else:
         display(Latex(r"${0} = {1} \pm {2} \ {3}$".format(id, val, err, unit)))
+
+def chi2(data, fdata, err):
+    return sum(((data-fdata)/err)**2)
