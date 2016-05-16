@@ -14,6 +14,12 @@ th, td {
   width: 2cm;
 }
 
+table.small th,td {
+  text-align: left;
+  height: 0.5cm;
+  width: 2cm;
+}
+
 div {
     padding: 0.5cm
 }
