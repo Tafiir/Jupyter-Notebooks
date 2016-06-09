@@ -1,0 +1,9 @@
+Element	Z	E_b [keV]	dE_b
+Mo	42	19.6	0.26
+Fe	26	nan	nan
+Cu	29	8.84	0.27
+Zr	40	17.71	0.24
+Zn	30	9.56	0.25
+Ni	28	8.18	0.27
+Ti	22	nan	nan
+Ag	47	24.69	0.25
