@@ -10,6 +10,7 @@ from prettytable import PrettyTable
 from html import escape
 
 import warnings
+import itertools
 
 
 def __init__():
@@ -23,8 +24,13 @@ def chi2(data, fdata, err):
 
 
 def pformat(data):
-    #TODO: Implement
-    pass
+    if isinstance(data, str):
+        return data
+    elif hasattr(data, "__iter__"):
+        return [pformat(i) for i in data]
+    elif isinstance(data, uc.UFloat):
+        return "${:L}$".format(data)
+    else: return data
 
 
 class Table(PrettyTable):
