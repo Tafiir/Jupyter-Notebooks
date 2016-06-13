@@ -5,7 +5,7 @@ import uncertainties.unumpy as un
 from numpy import *
 from scipy.optimize import curve_fit
 from matplotlib.pyplot import *
-from IPython.display import *
+from IPython.display import display, Latex, HTML
 from prettytable import PrettyTable
 from html import escape
 
@@ -60,3 +60,8 @@ def display_table(table):
         display(HTML(table.get_html_string()))
     else:
         display(table)
+
+def display_latex(obj):
+    if isinstance(obj, Latex):
+        display(obj)
+    else: display(Latex(obj))
