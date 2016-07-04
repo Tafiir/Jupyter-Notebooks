@@ -30,7 +30,7 @@ def pformat(data):
         return [pformat(i) for i in data]
     elif isinstance(data, uc.UFloat):
         return "${:L}$".format(data)
-    else: return data
+    else: return "${}$".format(data)
 
 
 class Table(PrettyTable):
